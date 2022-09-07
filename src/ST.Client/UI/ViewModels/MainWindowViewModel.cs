@@ -87,12 +87,7 @@ namespace System.Application.UI.ViewModels
             var showProxyScript = !OperatingSystem2.IsWindows() || R.IsChineseSimplified;
 
             //tabIdItems.Add(TabItemViewModel.TabItemId.StartPage);
-            if (showProxyScript)
-            {
-                // Android 目前底部菜单实现要隐藏需要改多个地方
-                // 主要是初始化时不依赖 TabItems，两边逻辑暂不能同步一套代码
-                tabIdItems.Add(TabItemViewModel.TabItemId.CommunityProxy);
-            }
+            tabIdItems.Add(TabItemViewModel.TabItemId.CommunityProxy);
             if (IApplication.IsDesktopPlatform)
             {
                 if (showProxyScript)
