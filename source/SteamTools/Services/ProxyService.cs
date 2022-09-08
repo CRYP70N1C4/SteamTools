@@ -165,6 +165,7 @@ Name=Resources.Twitch,
 Domains = new List<string>{ "twitch.tv" },
 ToDomain="twitch.rmbgame.net",
 Hosts = new List<string>{
+"youtube.com"
 "twitch.tv",
 "www.twitch.tv",
 "m.twitch.tv",
